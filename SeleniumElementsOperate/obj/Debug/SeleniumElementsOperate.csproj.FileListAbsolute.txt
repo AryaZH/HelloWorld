@@ -1,0 +1,17 @@
+F:\ComeOn_2017_PersonalTasks\Week1\SeleniumElementsOperate\SeleniumElementsOperate\bin\Debug\SeleniumElementsOperate.exe.config
+F:\ComeOn_2017_PersonalTasks\Week1\SeleniumElementsOperate\SeleniumElementsOperate\obj\Debug\SeleniumElementsOperate.csprojResolveAssemblyReference.cache
+F:\ComeOn_2017_PersonalTasks\Week1\SeleniumElementsOperate\SeleniumElementsOperate\bin\Debug\SeleniumElementsOperate.exe
+F:\ComeOn_2017_PersonalTasks\Week1\SeleniumElementsOperate\SeleniumElementsOperate\bin\Debug\SeleniumElementsOperate.pdb
+F:\ComeOn_2017_PersonalTasks\Week1\SeleniumElementsOperate\SeleniumElementsOperate\bin\Debug\Newtonsoft.Json.dll
+F:\ComeOn_2017_PersonalTasks\Week1\SeleniumElementsOperate\SeleniumElementsOperate\bin\Debug\Selenium.WebDriverBackedSelenium.dll
+F:\ComeOn_2017_PersonalTasks\Week1\SeleniumElementsOperate\SeleniumElementsOperate\bin\Debug\ThoughtWorks.Selenium.Core.dll
+F:\ComeOn_2017_PersonalTasks\Week1\SeleniumElementsOperate\SeleniumElementsOperate\bin\Debug\WebDriver.dll
+F:\ComeOn_2017_PersonalTasks\Week1\SeleniumElementsOperate\SeleniumElementsOperate\bin\Debug\WebDriver.Support.dll
+F:\ComeOn_2017_PersonalTasks\Week1\SeleniumElementsOperate\SeleniumElementsOperate\obj\Debug\SeleniumElementsOperate.exe
+F:\ComeOn_2017_PersonalTasks\Week1\SeleniumElementsOperate\SeleniumElementsOperate\obj\Debug\SeleniumElementsOperate.pdb
+D:\Efile\GitHub\SeleniumElementsOperate\SeleniumElementsOperate\bin\Debug\SeleniumElementsOperate.exe.config
+D:\Efile\GitHub\SeleniumElementsOperate\SeleniumElementsOperate\obj\Debug\SeleniumElementsOperate.exe
+D:\Efile\GitHub\SeleniumElementsOperate\SeleniumElementsOperate\obj\Debug\SeleniumElementsOperate.pdb
+D:\Efile\GitHub\SeleniumElementsOperate\bin\Debug\SeleniumElementsOperate.exe.config
+D:\Efile\GitHub\SeleniumElementsOperate\obj\Debug\SeleniumElementsOperate.exe
+D:\Efile\GitHub\SeleniumElementsOperate\obj\Debug\SeleniumElementsOperate.pdb

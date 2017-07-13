@@ -15,3 +15,6 @@ D:\Efile\GitHub\SeleniumElementsOperate\SeleniumElementsOperate\obj\Debug\Seleni
 D:\Efile\GitHub\SeleniumElementsOperate\bin\Debug\SeleniumElementsOperate.exe.config
 D:\Efile\GitHub\SeleniumElementsOperate\obj\Debug\SeleniumElementsOperate.exe
 D:\Efile\GitHub\SeleniumElementsOperate\obj\Debug\SeleniumElementsOperate.pdb
+C:\Users\hongz\Source\Repos\Selenium_Csharp_webItems\SeleniumElementsOperate\bin\Debug\SeleniumElementsOperate.exe.config
+C:\Users\hongz\Source\Repos\Selenium_Csharp_webItems\SeleniumElementsOperate\obj\Debug\SeleniumElementsOperate.exe
+C:\Users\hongz\Source\Repos\Selenium_Csharp_webItems\SeleniumElementsOperate\obj\Debug\SeleniumElementsOperate.pdb

@@ -56,16 +56,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IWebElement.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Task1_RadioButton.cs" />
     <Compile Include="Task3_TextBox.cs" />
     <Compile Include="Task4_SelectList.cs" />
-    <Compile Include="Task5_ScaleQuestion.cs" />
-    <Compile Include="Task6_TraverseInOnePage.cs" />
     <Compile Include="Task2_CheckBox.cs" />
-    <Compile Include="Task7_SkipPagesAndTraverse.cs" />
     <Compile Include="几种注释方式.cs" />
   </ItemGroup>
   <ItemGroup>

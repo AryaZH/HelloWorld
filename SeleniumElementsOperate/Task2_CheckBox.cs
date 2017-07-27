@@ -20,7 +20,7 @@ namespace SeleniumElementsOperate
         {
 
             driver = new ChromeDriver();
-            driver.Manage().Window.Maximize();
+        //    driver.Manage().Window.Maximize();
             driver.Navigate().GoToUrl(URL);
             driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(5));
 
@@ -69,6 +69,8 @@ namespace SeleniumElementsOperate
                     {
                         foreach (IWebElement Cb in CheckBoxesList)
                         {
+                            if (Cb.Text == "Other" || Cb.Text == "Concern")
+                                continue;
                             Cb.Click();
                             //Console.WriteLine(Cb.Text);
                         }

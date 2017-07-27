@@ -18,3 +18,9 @@ D:\Efile\GitHub\SeleniumElementsOperate\obj\Debug\SeleniumElementsOperate.pdb
 C:\Users\hongz\Source\Repos\Selenium_Csharp_webItems\SeleniumElementsOperate\bin\Debug\SeleniumElementsOperate.exe.config
 C:\Users\hongz\Source\Repos\Selenium_Csharp_webItems\SeleniumElementsOperate\obj\Debug\SeleniumElementsOperate.exe
 C:\Users\hongz\Source\Repos\Selenium_Csharp_webItems\SeleniumElementsOperate\obj\Debug\SeleniumElementsOperate.pdb
+D:\Efile\GitHub\Selenium_Csharp_webItems\SeleniumElementsOperate\bin\Debug\SeleniumElementsOperate.exe.config
+D:\Efile\GitHub\Selenium_Csharp_webItems\SeleniumElementsOperate\obj\Debug\SeleniumElementsOperate.exe
+D:\Efile\GitHub\Selenium_Csharp_webItems\SeleniumElementsOperate\obj\Debug\SeleniumElementsOperate.pdb
+D:\Efile\GitHub\Selenium_Csharp_webItems\SeleniumElementsOperate\obj\Debug\SeleniumElementsOperate.csprojResolveAssemblyReference.cache
+D:\Efile\GitHub\Selenium_Csharp_webItems\SeleniumElementsOperate\bin\Debug\SeleniumElementsOperate.exe
+D:\Efile\GitHub\Selenium_Csharp_webItems\SeleniumElementsOperate\bin\Debug\SeleniumElementsOperate.pdb

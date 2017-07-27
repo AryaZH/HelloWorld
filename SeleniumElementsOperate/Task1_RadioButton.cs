@@ -13,13 +13,8 @@ namespace SeleniumElementsOperate
 {
    public static class Task1_RadioButton
     {
-       public static IWebDriver driver;
-
-        public static void RadioButtonSelect(string URL)
+        public static void RadioButtonSelect(IWebDriver driver , string URL)
         {
-            driver = new ChromeDriver();
-            driver.Navigate().GoToUrl(URL);
-            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(5));
 
             ReadOnlyCollection<IWebElement> RadioButtonSelected = driver.FindElements(By.XPath("//div[contains(@class,'customRadioButtonsList')]/div[last()-1]/span"));
 
@@ -32,11 +27,6 @@ namespace SeleniumElementsOperate
                     //Console.WriteLine(Rb.Text);
                 }
             }
-
-            driver.Quit();
-
-            //找到整个页面的Radiobutton,当前设置选取倒数第二个选项
-            //考虑设置为随机选中一个
         }
 
     }

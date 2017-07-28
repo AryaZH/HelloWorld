@@ -22,20 +22,24 @@ namespace IntegratedComponents
         public static void Prepared()
         {
             DR = new FirefoxDriver();
-            baseURL = "http://enprecis.net/chrysler/GenSurvey.aspx?guid=9iKbKlhYkHCzQc3Ls%2fovSw%3d%3d";
+            baseURL = "http://vmchnqafull01/chrysler/GenSurvey.aspx?guid=UJ6%2bk2G%2fz3yU0D2Do%2b4Gtg%3d%3d";
             DR.Navigate().GoToUrl(baseURL);
-          //  DR.Manage().Window.Maximize();
-            DR.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(10));
 
+            getCheckBoxes();
         }
         [TestMethod]
 
-        public static void getRadioButtons()
+        public static void getCheckBoxes()
         {
-            ReadOnlyCollection<IWebElement> RadioButtonsC = DR.FindElements(By.XPath("//div[contains(@class,'customRadioButtonsList')]/div[last()-1]/span"));
-            foreach(IWebElement RadioButton in RadioButtonsC)
+            ReadOnlyCollection<IWebElement> CBlist = DR.FindElements(By.XPath("//div[@class='checkBoxWithLabels']/div"));
+
+            foreach (IWebElement CB in CBlist)
             {
-                RadioButton.Click();
+                if (!CB.FindElement(By.TagName("input")).GetAttribute("value").Equals("checked")
+                && !CB.FindElement(By.XPath("//div[@class='checkBoxWithLabels']/div/div/span")).Text.Equals("No Concerns"))
+                {
+                    CB.FindElement(By.CssSelector(".checkBoxLabel.unselectable.CheckBoxLabel_Color")).Click();
+                }
             }
         }
 

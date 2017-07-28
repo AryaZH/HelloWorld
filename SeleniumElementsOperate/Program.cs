@@ -16,53 +16,56 @@ namespace SeleniumElementsOperate
 {
     class Program
     {
-
-        
         private static string baseURL;
         public static IWebDriver DR;
-
 
         static void Main(string[] args)
         {
             DR = new ChromeDriver();
-            baseURL = "http://vmchnqafull01/chrysler/GenSurvey.aspx?guid=4a%2f7E6M9nzEcbxv16toA7w%3d%3d";
+            baseURL = "http://vmchnqafull01/chrysler/GenSurvey.aspx?guid=kTzHW1GDjmX4RF6O4HGvMA%3d%3d";
             DR.Navigate().GoToUrl(baseURL);
-            //DR.Manage().Window.Maximize();
-            //DR.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(3));
 
             RunAllPages();
         }
 
         public static void RunAllPages()
         {
-                // Get Next button
+            try
+            {
                 bool hasNext = DR.FindElement(By.Name("btnNext")).Displayed;
-
                 while (hasNext)
                 {
                     System.Threading.Thread.Sleep(1000);
-                    hasNext = FlowControl();
+                    hasNext = EachPage();
                 }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
         }
 
-        public static bool FlowControl()
+        public static bool EachPage()
         {
-
             getRadioButtons();
 
             SelectList();
 
             getCheckBoxes();
 
+            Single_TextBox();
+
+            Muti_TextBox();
+
+            Scales();
+
             while (DR.FindElements(By.Name("btnNext")).Count > 0)
             {
                 DR.FindElement(By.Name("btnNext")).Click();
-                System.Threading.Thread.Sleep(1000);
                 return true;
             }
             return false;
         }
-
 
         public static void getRadioButtons()
         {
@@ -75,10 +78,15 @@ namespace SeleniumElementsOperate
 
         public static void getCheckBoxes()
         {
-            ReadOnlyCollection<IWebElement> getCheckBoxes = DR.FindElements(By.XPath("//div[@class='checkBoxWithLabels']/div/span[position() mod 2 = 1]"));
-            foreach (IWebElement cb in getCheckBoxes)
+            ReadOnlyCollection<IWebElement> CBlist = DR.FindElements(By.XPath("//div[@class='checkBoxWithLabels']/div"));
+
+            foreach (IWebElement CB in CBlist)
             {
-                cb.Click();
+                if (!CB.FindElement(By.TagName("input")).GetAttribute("value").Equals("checked")
+                && !CB.FindElement(By.CssSelector(".checkBoxLabel.unselectable.CheckBoxLabel_Color")).Text.Equals("No Concerns"))
+                {
+                    CB.FindElement(By.CssSelector(".checkBoxLabel.unselectable.CheckBoxLabel_Color")).Click();
+                }   
             }
         }
 
@@ -92,6 +100,35 @@ namespace SeleniumElementsOperate
                 Random rd = new Random();
                 int i = rd.Next(1, SE.AllSelectedOptions.Count);
                 SE.SelectByIndex(i);
+            }
+        }
+
+        public static void Single_TextBox()
+        {
+            ReadOnlyCollection<IWebElement> SingleTextList = DR.FindElements(By.XPath("//div[@class='singleLineTextBox']/input"));
+            foreach(IWebElement St in SingleTextList)
+            {
+                St.SendKeys("Single Testing");
+            }
+        }
+
+        public static void Muti_TextBox()
+        {
+            ReadOnlyCollection<IWebElement> MutiTextList = DR.FindElements(By.ClassName("multilineTextBox"));
+
+            foreach (IWebElement St in MutiTextList)
+            {
+                St.SendKeys("Muti Text Testing");
+            }
+        }
+
+        public static void Scales()
+        {
+            ReadOnlyCollection<IWebElement> ScaleList = DR.FindElements(By.XPath("//div[contains(@class,'slider')]/div[contains(@class,'ticks')]"));
+
+            foreach (IWebElement St in ScaleList)
+            {
+                St.Click();
             }
         }
 

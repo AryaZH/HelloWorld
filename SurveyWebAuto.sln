@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumElementsOperate", "SeleniumElementsOperate\SeleniumElementsOperate.csproj", "{E9F259ED-B6DC-491A-AD44-30B55638C0DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurveyWebAuto", "SeleniumElementsOperate\SurveyWebAuto.csproj", "{E9F259ED-B6DC-491A-AD44-30B55638C0DA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegratedComponents", "IntegratedComponents\IntegratedComponents.csproj", "{99D068CF-2DDC-4F28-BD19-1085663BDB17}"
 EndProject

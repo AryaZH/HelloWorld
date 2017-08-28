@@ -66,9 +66,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SeleniumElementsOperate\SeleniumElementsOperate.csproj">
+    <ProjectReference Include="..\SeleniumElementsOperate\SurveyWebAuto.csproj">
       <Project>{e9f259ed-b6dc-491a-ad44-30b55638c0da}</Project>
-      <Name>SeleniumElementsOperate</Name>
+      <Name>SurveyWebAuto</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

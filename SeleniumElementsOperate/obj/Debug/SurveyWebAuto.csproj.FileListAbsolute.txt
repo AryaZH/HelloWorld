@@ -1,0 +1,3 @@
+D:\Efile\GitHub\Selenium_Csharp_webItems\SeleniumElementsOperate\bin\Debug\SeleniumElementsOperate.exe.config
+D:\Efile\GitHub\Selenium_Csharp_webItems\SeleniumElementsOperate\obj\Debug\SeleniumElementsOperate.exe
+D:\Efile\GitHub\Selenium_Csharp_webItems\SeleniumElementsOperate\obj\Debug\SeleniumElementsOperate.pdb

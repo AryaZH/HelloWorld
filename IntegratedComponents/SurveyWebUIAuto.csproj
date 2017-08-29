@@ -6,8 +6,8 @@
     <ProjectGuid>{99D068CF-2DDC-4F28-BD19-1085663BDB17}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>IntegratedComponents</RootNamespace>
-    <AssemblyName>IntegratedComponents</AssemblyName>
+    <RootNamespace>SurveyWebUIAuto</RootNamespace>
+    <AssemblyName>SurveyWebUIAuto</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -33,6 +33,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Selenium.WebDriverBackedSelenium">
@@ -62,14 +65,12 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="ThroughPages.cs" />
+    <Compile Include="SurveyPage_NoTGWItems.cs" />
+    <Compile Include="SurveyBussiness_Flow.cs" />
+    <Compile Include="SurveyPage_TGWItems.cs" />
+    <Compile Include="Survey_TestCases.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SeleniumElementsOperate\SurveyWebAuto.csproj">
-      <Project>{e9f259ed-b6dc-491a-ad44-30b55638c0da}</Project>
-      <Name>SurveyWebAuto</Name>
-    </ProjectReference>
+    <Compile Include="几种注释方式.cs" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

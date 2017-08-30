@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
@@ -8,21 +7,31 @@ namespace SurveyWebUIAuto
 {
     class SurveyPage_TGWItems
     {
-        //Checkbox 
         public void getCheckBoxes(IWebDriver DR)
         {
             ReadOnlyCollection<IWebElement> CBlist = DR.FindElements(By.XPath("//div[@class='checkBoxWithLabels']/div"));
 
             foreach (IWebElement CB in CBlist)
             {
-                if (!CB.FindElement(By.TagName("input")).GetAttribute("value").Equals("checked")
-                && !CB.FindElement(By.CssSelector(".checkBoxLabel.unselectable.CheckBoxLabel_Color")).Text.Equals("No Concerns"))
+                if (CB.FindElement(By.TagName("input")).GetAttribute("value").Equals("checked"))
+                    continue;
+
+                IWebElement CategoryLevel1 = CB.FindElement(By.CssSelector(".checkBoxLabel.unselectable.CheckBoxLabel_Color"));
+                string SurveyDisplayText = CategoryLevel1.Text;
+
+                switch (SurveyDisplayText)
                 {
-                    CB.FindElement(By.CssSelector(".checkBoxLabel.unselectable.CheckBoxLabel_Color")).Click();
+                    case "No Concerns":
+                        break;
+                    case "I have not experienced any usability issues":
+                        break;
+                    default:
+                        CategoryLevel1.Click();
+                        break;
                 }
+
             }
         }
-
         //Radio button 
         public void getRadioButtons(IWebDriver DR)
         {

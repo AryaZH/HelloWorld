@@ -1,15 +1,28 @@
-﻿using OpenQA.Selenium;
+﻿using System;
+using OpenQA.Selenium;
 
 namespace SurveyWebUIAuto
 {
-    class SurveyPage_NoTGWItems
+    public class SurveyPage_NoTGWItems
     {
-        public bool TMS_NoTGW(IWebDriver driver)
+        public static IWebDriver dr;
+        public static bool NoTGW_CheckBox(IWebElement CB)
         {
-            IWebElement CheckBoxNo = driver.FindElement(By.ClassName("checkBoxLabel unselectable CheckBoxLabel_Color"));
-            if (CheckBoxNo.GetAttribute("text").Equals("I have not experienced any usability issues"))
-            { return true;
+            string text = dr.FindElement(By.ClassName("checkBoxLabel unselectable CheckBoxLabel_Color")).Text;
+            bool flag = false;
+            switch(text)
+            {
+                case "I have not experienced any usability issues":
+                    flag = true;
+                    break;
+                case "No Concern":
+                    flag = true;
+                    break;
+                default:
+                    return false;
             }
+
+            return flag;
         }
     }
 }

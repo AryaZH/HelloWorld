@@ -1,0 +1,8 @@
+D:\Efile\GitHub\Selenium_Csharp_webItems\CampaignCreateCheck\obj\Debug\CampaignCreated.csprojResolveAssemblyReference.cache
+D:\Efile\GitHub\Selenium_Csharp_webItems\CampaignCreateCheck\bin\Debug\CampaignCreateCheck.dll
+D:\Efile\GitHub\Selenium_Csharp_webItems\CampaignCreateCheck\bin\Debug\CampaignCreateCheck.pdb
+D:\Efile\GitHub\Selenium_Csharp_webItems\CampaignCreateCheck\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+D:\Efile\GitHub\Selenium_Csharp_webItems\CampaignCreateCheck\bin\Debug\Microsoft.SqlServer.FileSystemTask.dll
+D:\Efile\GitHub\Selenium_Csharp_webItems\CampaignCreateCheck\bin\Debug\Microsoft.SqlServer.ManagedConnections.dll
+D:\Efile\GitHub\Selenium_Csharp_webItems\CampaignCreateCheck\obj\Debug\CampaignCreateCheck.dll
+D:\Efile\GitHub\Selenium_Csharp_webItems\CampaignCreateCheck\obj\Debug\CampaignCreateCheck.pdb

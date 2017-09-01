@@ -17,3 +17,6 @@ D:\Efile\GitHub\Selenium_Csharp_webItems\IntegratedComponents\bin\Debug\SurveyWe
 D:\Efile\GitHub\Selenium_Csharp_webItems\IntegratedComponents\bin\Debug\SurveyWebUIAuto.pdb
 D:\Efile\GitHub\Selenium_Csharp_webItems\IntegratedComponents\obj\Debug\SurveyWebUIAuto.dll
 D:\Efile\GitHub\Selenium_Csharp_webItems\IntegratedComponents\obj\Debug\SurveyWebUIAuto.pdb
+D:\Efile\GitHub\Selenium_Csharp_webItems\IntegratedComponents\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+D:\Efile\GitHub\Selenium_Csharp_webItems\IntegratedComponents\bin\Debug\CampaignCreateCheck.dll
+D:\Efile\GitHub\Selenium_Csharp_webItems\IntegratedComponents\bin\Debug\CampaignCreateCheck.pdb

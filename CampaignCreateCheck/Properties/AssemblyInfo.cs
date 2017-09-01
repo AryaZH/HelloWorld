@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("IntegratedComponents")]
+[assembly: AssemblyTitle("CampaignCreateCheck")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("IntegratedComponents")]
+[assembly: AssemblyProduct("CampaignCreateCheck")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("99d068cf-2ddc-4f28-bd19-1085663bdb17")]
+[assembly: Guid("cdd3b151-9f3e-4334-8d68-e4d095c3e645")]
 
 // Version information for an assembly consists of the following four values:
 //

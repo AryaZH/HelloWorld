@@ -67,7 +67,8 @@
   </Choose>
   <ItemGroup>
     <Compile Include="SurveyPage_NoTGWItems.cs" />
-    <Compile Include="SurveyBussiness_Flow.cs" />
+    <Compile Include="TargetCategorySurvey_Flow.cs" />
+    <Compile Include="WholeSurvey_Flow.cs" />
     <Compile Include="SurveyPage_TGWItems.cs" />
     <Compile Include="Survey_TestCases.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

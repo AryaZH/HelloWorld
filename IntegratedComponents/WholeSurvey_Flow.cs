@@ -5,12 +5,12 @@ using OpenQA.Selenium.Chrome;
 
 namespace SurveyWebUIAuto
 {
-    class SurveyBussiness_Flow
+    class WholeSurvey_Flow
     {
-        public SurveyBussiness_Flow()
+        public WholeSurvey_Flow()
         { }
 
-        public SurveyBussiness_Flow(IWebDriver dr)
+        public WholeSurvey_Flow(IWebDriver dr)
         { }
 
         public void WalkSurvey(IWebDriver dr, string SurveyLink)

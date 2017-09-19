@@ -17,27 +17,18 @@ namespace CampaignCreateCheck
         public  void Connect()
 
         {
-
             try
-
             {
-
                 myconnection = new SqlConnection(connStr);
 
                 myconnection.Open();     //打开数据库
 
                 Console.WriteLine("数据库连接成功！");
-
             }
-
             catch (Exception ee)
-
             {
-
                 Console.WriteLine("数据库连接失败！" + ee.ToString());
-
             }
-
         }
     }
 }

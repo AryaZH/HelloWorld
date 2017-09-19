@@ -13,7 +13,7 @@ namespace SurveyWebUIAuto
         [TestMethod]
         public void TMSSurvey()
         {
-            SurveyBussiness_Flow SBus = new SurveyBussiness_Flow();
+            WholeSurvey_Flow SBus = new WholeSurvey_Flow();
             SBus.WalkSurvey(DR, "http://localhost/TMS/GenSurvey.aspx?guid=h%2fGLzUzjS5U%3d");
         }
 

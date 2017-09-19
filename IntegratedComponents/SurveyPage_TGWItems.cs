@@ -2,13 +2,14 @@
 using System.Collections.ObjectModel;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
+using System.Collections.Generic;
 
 namespace SurveyWebUIAuto
 {
     class SurveyPage_TGWItems
     {
         /// <summary>
-        /// Check Box 
+        /// Select all unchecked CheckBox 
         /// </summary>
         /// <param name="DR">Web driver</param>
         public void getCheckBoxes(IWebDriver DR)
@@ -36,6 +37,42 @@ namespace SurveyWebUIAuto
             }
         }
 
+        /// <summary>
+        /// Select target unchecked CheckBox , Filter CategoryLevel1
+        /// </summary>
+        /// <param name="DR">Web driver</param>
+        /// <param name="CategoryLevel1List">CategoryLevelList</param>
+        public void getTargetCheckBoxes(IWebDriver DR, List<string> CategoryLevel1List)
+        {
+            ReadOnlyCollection<IWebElement> CBlist = DR.FindElements(By.XPath("//div[@class='checkBoxWithLabels']/div"));
+
+            foreach (string C1 in CategoryLevel1List)
+            {
+                foreach (IWebElement CB in CBlist)
+                {
+                    IWebElement CategoryLevel1 = CB.FindElement(By.CssSelector(".checkBoxLabel.unselectable.CheckBoxLabel_Color"));
+                    string SurveyDisplayText = CategoryLevel1.Text;
+
+                    if (SurveyDisplayText != C1)
+                        continue;
+
+                    if (CB.FindElement(By.TagName("input")).GetAttribute("value").Equals("checked"))
+                        continue;
+
+                    switch (SurveyDisplayText)
+                    {
+                        //Skip NoTGW items 
+                        case "No Concerns":
+                        case "I have not experienced any usability issues":
+                            break;
+                        default:
+                            CategoryLevel1.Click();
+                            break;
+                    }
+                }
+            }
+        }
+   
         /// <summary>
         /// Radio button 
         /// </summary>
